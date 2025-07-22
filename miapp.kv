@@ -1,4 +1,4 @@
-MainWidget:
+<MainWidget>:
     orientation: 'vertical'
     padding: 20
     spacing: 20
@@ -9,7 +9,7 @@ MainWidget:
 
     Button:
         text: 'Presióname'
-        on_press: app.root.ids.label_resultado.text = '¡Botón presionado!'
+        on_press: root.on_button_press()
 
     Label:
         id: label_resultado
