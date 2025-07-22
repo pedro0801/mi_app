@@ -1,0 +1,17 @@
+MainWidget:
+    orientation: 'vertical'
+    padding: 20
+    spacing: 20
+
+    Label:
+        text: 'Hola, esta es mi primera app con Kivy'
+        font_size: 24
+
+    Button:
+        text: 'Presióname'
+        on_press: app.root.ids.label_resultado.text = '¡Botón presionado!'
+
+    Label:
+        id: label_resultado
+        text: ''
+        font_size: 18
